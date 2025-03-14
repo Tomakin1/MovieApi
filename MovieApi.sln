@@ -3,9 +3,39 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35806.99 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastucture", "Infrastucture", "{12797ECE-3123-4E12-AE0B-2EA38D0FA025}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{913E7474-7C43-4232-A0EA-EC86C000813A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{F83B2A73-5D84-4802-A3E5-B3C6DE3F0712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApi.Domain", "Core\MovieApi.Domain\MovieApi.Domain.csproj", "{B7B0F347-828D-407D-AF70-A6AA369C6C7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApi.Persistence", "Infrastucture\MovieApi.Persistence\MovieApi.Persistence.csproj", "{87019285-B5DA-4854-BB56-008F6CE562A7}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7B0F347-828D-407D-AF70-A6AA369C6C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B0F347-828D-407D-AF70-A6AA369C6C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B0F347-828D-407D-AF70-A6AA369C6C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B0F347-828D-407D-AF70-A6AA369C6C7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87019285-B5DA-4854-BB56-008F6CE562A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87019285-B5DA-4854-BB56-008F6CE562A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87019285-B5DA-4854-BB56-008F6CE562A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87019285-B5DA-4854-BB56-008F6CE562A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7B0F347-828D-407D-AF70-A6AA369C6C7C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{87019285-B5DA-4854-BB56-008F6CE562A7} = {12797ECE-3123-4E12-AE0B-2EA38D0FA025}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1F3FE88-68B6-448A-9622-E2C6D62EFE3E}
