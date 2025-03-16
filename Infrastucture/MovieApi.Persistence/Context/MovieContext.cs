@@ -12,7 +12,7 @@ namespace MovieApi.Persistence.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=MovieDb;User Id=sa;Password=1234@omer;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=MovieDb;User Id=sa;Password=YourPassword123!;TrustServerCertificate=True");
             base.OnConfiguring(optionsBuilder);
         }
 

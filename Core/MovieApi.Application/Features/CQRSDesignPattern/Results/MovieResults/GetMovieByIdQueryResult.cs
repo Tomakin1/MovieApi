@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieApi.Application.Features.CQRSDesignPattern.Results.MovieResults
 {
-    class GetMovieByIdQueryResult
+    public class GetMovieByIdQueryResult
     {
         public int Id { get; set; }
         public string Title { get; set; }
@@ -15,7 +15,7 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Results.MovieResults
         public string Description { get; set; }
         public int Duration { get; set; } // Film Kaç Dakika Sürüyor
         public DateTime ReleaseDate { get; set; } // Film Ne Zaman Yayınlandı
-        public string CreatedDATE { get; set; } // Film Veritabanına Ne Zaman Eklendi
+        public string CreatedDate { get; set; } // Film Veritabanına Ne Zaman Eklendi
         public bool Status { get; set; } // Fim Aktif Olarak Sitede Var  mı
     }
 }
