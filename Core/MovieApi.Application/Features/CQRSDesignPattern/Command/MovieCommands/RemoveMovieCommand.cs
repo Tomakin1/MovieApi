@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieApi.Application.Features.CQRSDesignPattern.Command.MovieCommands
 {
-    class RemoveMovieCommand
+    public class RemoveMovieCommand
     {
         public int Id { get; set; }
     }

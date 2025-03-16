@@ -15,7 +15,7 @@ namespace MovieApi.Domain.Entities
         public string Description { get; set; }
         public int Duration { get; set; } // Film Kaç Dakika Sürüyor
         public DateTime ReleaseDate { get; set; } // Film Ne Zaman Yayınlandı
-        public string CreatedDATE { get; set; } // Film Veritabanına Ne Zaman Eklendi
+        public string CreatedDate { get; set; } // Film Veritabanına Ne Zaman Eklendi
         public bool Status { get; set; } // Fim Aktif Olarak Sitede Var  mı
     }
 }

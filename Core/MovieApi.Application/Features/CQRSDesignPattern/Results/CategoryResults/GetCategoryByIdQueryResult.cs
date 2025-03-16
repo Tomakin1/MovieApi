@@ -8,5 +8,7 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Results.CategoryResult
 {
     class GetCategoryByIdQueryResult
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }

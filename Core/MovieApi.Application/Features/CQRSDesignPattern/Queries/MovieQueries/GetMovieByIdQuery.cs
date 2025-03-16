@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieApi.Application.Features.CQRSDesignPattern.Results.CategoryResults
+namespace MovieApi.Application.Features.CQRSDesignPattern.Queries.MovieQueries
 {
-    public class GetCategoryQueryResult
+    public class GetMovieByIdQuery
     {
         public int Id { get; set; }
-        public string Name { get; set; }
     }
 }
