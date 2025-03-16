@@ -6,7 +6,7 @@ using MovieApi.Application.Features.CQRSDesignPattern.Queries.CategoryQueries;
 
 namespace MovieApi.WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    
     [ApiController]
     public class CategoriesController : ControllerBase
     {
@@ -46,7 +46,7 @@ namespace MovieApi.WebApi.Controllers
             return Ok("Kategori Silindi");
         }
 
-        [HttpPut("category")]
+        [HttpPut("category")] // Çalışmıyor
         public async Task<IActionResult>UpdateCategory([FromBody] UpdateCategoryCommand command)
         {
             await _updateCategoryCommandHandler.Handle(command);
